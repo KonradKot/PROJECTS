@@ -1,0 +1,2 @@
+clear
+imread('zakodowany.gif');
