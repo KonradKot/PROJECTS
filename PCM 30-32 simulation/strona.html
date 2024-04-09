@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" type="text/css" href="strona.css">
+    <title>Projekt Synchronizacja - Demo by KoKo & Lukas</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+
+<body>
+    <!-- ____________________________Miejsce na kontenery i przyciski__________________________________" -->
+    <div id="container">
+    
+        <div id="ramka_main">
+            <div style="text-align: center;">
+                <h1>Projekt Synchronizacja</h1>
+                <h2 class="tytul">Fazowanie Ramki - wersja Demo</h2>
+            </div>
+        </div>
+        <div id="ramka_wykresy">
+            <div id="ramka_Guziki">
+                <h2>Przyciski</h2>
+                <div class="button-container">
+                    <button class="button" id="toggleButton">Start/Stop</button>
+                </div>
+                <div class="button-container_Reset">
+                    <button class="Reset_button" id="ResetButton">Reset</button>
+                </div>
+                <div class="button-container">
+                    <button class="button" id="slowDownButton">Slow Down</button>
+                    <button class="button" id="speedUpButton">Speed Up</button>
+                </div>
+            </div>
+            <div class="ramka_zegar_Liniowy">
+                <div id="nazwa_zegar">
+                    <div style="text-align: center;">
+                        <h2>Zegar Liniowy</h2>
+                    </div>
+                </div> 
+                <svg id="chart_1_ZL" width="800" height="35"></svg> <!-- svg - oznaczenia grafiki wektorowej skalowanej w html -->
+            </div> 
+    
+            <div class="frame-container">
+    
+            <div class="frame" id="frame1">
+                <h2>Zegar Cyfrowy 1/8 <span class="arrow-icon">▼</span></h2></h2>
+                <!-- Tutaj umieść zawartość zegara cyfrowego -->
+                <div class="ramka_zegar_Cyfrowy">
+                    <svg id="chart_1_ZC" width="800" height="35"></svg> <!-- svg - oznaczenia grafiki wektorowej skalowanej w html -->
+                    <svg id="chart_2_ZC" width="800" height="35"></svg>
+                    <svg id="chart_3_ZC" width="800" height="35"></svg>
+                    <svg id="chart_4_ZC" width="800" height="35"></svg>
+                    <svg id="chart_5_ZC" width="800" height="35"></svg>
+                    <svg id="chart_6_ZC" width="800" height="35"></svg>
+                    <svg id="chart_7_ZC" width="800" height="35"></svg>
+                    <svg id="chart_8_ZC" width="800" height="35"></svg>
+                    </div> 
+            </div>
+
+            <div class="frame" id="frame2">
+                <h2>Zegar Kanałowy 1/32 <span class="arrow-icon">▼</span></h2></h2>
+                <div class="ramka_zegar_Kanalowy"> 
+                    <svg id="chart_1_ZK" width="800" height="35"></svg>
+                    <svg id="chart_2_ZK" width="800" height="35"></svg>
+                    <svg id="chart_3_ZK" width="800" height="35"></svg>
+                    <svg id="chart_4_ZK" width="800" height="35"></svg>
+                    <svg id="chart_5_ZK" width="800" height="35"></svg>
+                    <svg id="chart_6_ZK" width="800" height="35"></svg>
+                    <svg id="chart_7_ZK" width="800" height="35"></svg>
+                    <svg id="chart_8_ZK" width="800" height="35"></svg>
+                    <svg id="chart_9_ZK" width="800" height="35"></svg>
+                    <svg id="chart_10_ZK" width="800" height="35"></svg>
+                    <svg id="chart_11_ZK" width="800" height="35"></svg>
+                    <svg id="chart_12_ZK" width="800" height="35"></svg>
+                    <svg id="chart_13_ZK" width="800" height="35"></svg>
+                    <svg id="chart_14_ZK" width="800" height="35"></svg>
+                    <svg id="chart_15_ZK" width="800" height="35"></svg>
+                    <svg id="chart_16_ZK" width="800" height="35"></svg>
+                    <svg id="chart_17_ZK" width="800" height="35"></svg>
+                    <svg id="chart_18_ZK" width="800" height="35"></svg>
+                    <svg id="chart_19_ZK" width="800" height="35"></svg>
+                    <svg id="chart_20_ZK" width="800" height="35"></svg>
+                    <svg id="chart_21_ZK" width="800" height="35"></svg>
+                    <svg id="chart_22_ZK" width="800" height="35"></svg>
+                    <svg id="chart_23_ZK" width="800" height="35"></svg>
+                    <svg id="chart_24_ZK" width="800" height="35"></svg>
+                    <svg id="chart_25_ZK" width="800" height="35"></svg>
+                    <svg id="chart_26_ZK" width="800" height="35"></svg>
+                    <svg id="chart_27_ZK" width="800" height="35"></svg>
+                    <svg id="chart_28_ZK" width="800" height="35"></svg>
+                    <svg id="chart_29_ZK" width="800" height="35"></svg>
+                    <svg id="chart_30_ZK" width="800" height="35"></svg>
+                    <svg id="chart_31_ZK" width="800" height="35"></svg>
+                    <svg id="chart_32_ZK" width="800" height="35"></svg>
+                    </div> 
+            </div>
+            
+            <div class="frame" id="frame3">
+                <h2>Zegar Ramek 1/16 <span class="arrow-icon">▼</span></h2> </h2>
+                <div class="ramka_zegar_Ramek"> 
+                    <svg id="chart_1_ZR" width="800" height="35"></svg>
+                    <svg id="chart_2_ZR" width="800" height="35"></svg>
+                    <svg id="chart_3_ZR" width="800" height="35"></svg>
+                    <svg id="chart_4_ZR" width="800" height="35"></svg>
+                    <svg id="chart_5_ZR" width="800" height="35"></svg>
+                    <svg id="chart_6_ZR" width="800" height="35"></svg>
+                    <svg id="chart_7_ZR" width="800" height="35"></svg>
+                    <svg id="chart_8_ZR" width="800" height="35"></svg>
+                    <svg id="chart_9_ZR" width="800" height="35"></svg>
+                    <svg id="chart_10_ZR" width="800" height="35"></svg>
+                    <svg id="chart_11_ZR" width="800" height="35"></svg>
+                    <svg id="chart_12_ZR" width="800" height="35"></svg>
+                    <svg id="chart_13_ZR" width="800" height="35"></svg>
+                    <svg id="chart_14_ZR" width="800" height="35"></svg>
+                    <svg id="chart_15_ZR" width="800" height="35"></svg>
+                    <svg id="chart_16_ZR" width="800" height="35"></svg>
+                    </div> 
+                </div>
+            </div>
+            
+        <!--ZEGAR              KANALOWY                  -->
+            <!--ZEGAR              RAMEK                  -->
+        <!-- Dodaj przycisk "Start/Stop" -->
+        <div id="stopka">
+            <h3>Konrad Kotlarz & Łukasz Szczeciński</h3>
+            
+        </div>
+    </div>
+    </div>
+    <!-- _______________________________________________________________________________________________" -->
+
+    <script src="strona.js">
+        // głowny kod strony internetowej
+        //plik .js
+    </script> 
+</body>
+</html>

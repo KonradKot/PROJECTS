@@ -1,0 +1,438 @@
+#container{
+    width:1200px;
+    height:1100px;
+    border-width:5px;
+    border-top: solid;
+    border-bottom: solid;
+    border-left:solid;
+    border-right:solid;
+    background-color:lightyellow;
+}
+#ramka_main{
+    width: 1140px;
+    height: 100px;
+    border-width:5px;
+    border-top: solid;
+    border-bottom: solid;
+    border-left:solid;
+    border-right:solid;
+    padding:5px;
+    margin-bottom:15px;
+    margin-top:15px;
+    margin-left:15px;
+    margin-right:15px;
+}
+#ramka_wykresy{
+    width: 1140px;
+    height: 920px;
+    border-width:5px;
+    border-top: solid;
+    border-bottom: solid;
+    border-left:solid;
+    border-right:solid;
+    padding:5px;
+    margin-bottom:15px;
+    margin-top:15px;
+    margin-left:15px;
+    margin-right:15px;
+}
+#ramka_Guziki{
+    width: 200px;
+    height: 200px;
+    border-width:5px;
+    border-top: solid;
+    border-bottom: solid;
+    border-left:solid;
+    border-right:solid;
+    padding:5px;
+    margin-bottom:15px;
+    margin-top:15px;
+    margin-left:15px;
+    margin-right:15px;
+    background-color:dodgerblue ;
+    float: right;
+}
+.ramka_zegar_Liniowy
+{
+    width: 800px;
+    height: 100px;
+    border-width:5px;
+    border-top: dashed;
+    border-bottom: dashed;
+    border-left:dashed;
+    border-right:dashed;
+    padding:5px;
+    margin-bottom:5px;
+    margin-top:10px;
+    margin-left:10px;
+    margin-right:10px;
+    background-color: lightblue;
+}
+.chart_1_ZL {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.frame-container {
+        display: grid;
+        grid-template-columns: repeat(1, 3fr);
+        grid-gap: 5px;
+    }
+
+    .frame {
+        border: 5px solid lightblue;
+        padding: 5px;
+        background-color: lightblue;
+        transition: max-height 0.5s ease-in-out;
+        overflow: hidden;
+        max-height: 50px;
+        border-top: dashed;
+        border-bottom: dashed;
+        border-left:dashed;
+        border-right:dashed;
+    }
+
+    .expanded {
+        max-height: 400px; 
+    }
+
+    .clock-content {
+        background-color: lightblue;
+        padding: 5px;
+    }
+    .arrow-icon {
+        margin-left: auto; /* Przesunięcie ikony na prawo */
+    }
+    .chart-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+.ramka_zegar_Cyfrowy
+{
+    width: 800px;
+    height: 300px;
+    border-width:5px;
+    border-top: dashed;
+    border-bottom: dashed;
+    border-left:dashed;
+    border-right:dashed;
+    padding:5px;
+    margin-bottom:5px;
+    margin-top:5px;
+    margin-left:10px;
+    margin-right:10px;
+    background-color: lightblue;
+    overflow-y: scroll; /* Dodaje pionowy pasek przewijania */
+    overflow-x: hidden; /* Ukrywa poziomy pasek przewijania */
+}
+.chart_1_ZC {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_2_ZC {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_3_ZC {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_4_ZC {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_5_ZC {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_6_ZC {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_7_ZC {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_8_ZC {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+
+.ramka_zegar_Kanalowy
+{
+    width: 800px;
+    height: 300px;
+    border-width:5px;
+    border-top: dashed;
+    border-bottom: dashed;
+    border-left:dashed;
+    border-right:dashed;
+    padding:5px;
+    margin-bottom:5px;
+    margin-top:5px;
+    margin-left:10px;
+    margin-right:10px;
+    background-color: lightblue;
+    overflow-y: scroll; /* Dodaje pionowy pasek przewijania */
+    overflow-x: hidden; /* Ukrywa poziomy pasek przewijania */
+}
+
+.chart_1_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_2_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_3_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_4_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_5_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_6_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_7_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_8_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_9_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_10_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_11_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_12_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_13_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_14_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_15_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_16_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_17_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_18_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_19_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_20_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_21_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_22_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_23_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_24_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_25_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_26_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_27_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_28_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_29_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_30_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_31_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_32_ZK {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+
+
+.ramka_zegar_Ramek
+{
+    width: 800px;
+    height: 300px;
+    border-width:5px;
+    border-top: dashed;
+    border-bottom: dashed;
+    border-left:dashed;
+    border-right:dashed;
+    padding:5px;
+    margin-bottom:5px;
+    margin-top:5px;
+    margin-left:10px;
+    margin-right:10px;
+    background-color: lightblue;
+    overflow-y: scroll; /* Dodaje pionowy pasek przewijania */
+    overflow-x: hidden; /* Ukrywa poziomy pasek przewijania */
+}
+
+.chart_1_ZR {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_2_ZR {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_3_ZR {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_4_ZR {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_5_ZR {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_6_ZR {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_7_ZR {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_8_ZR {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_9_ZR {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_10_ZR {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_11_ZR {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_12_ZR {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_13_ZR {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_14_ZR {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_15_ZR {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+.chart_16_ZR {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: coral;
+    color: crimson;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.button-container_Reset {
+    text-align: center;
+    margin-top: 10px;
+}
+.Reset_button{
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: coral;
+    color: crimson;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+#stopka
+{
+    width: 750px;
+    height: 60px;
+    border-width:5px;
+    border-top: dashed;
+    border-bottom: dashed;
+    border-left:dashed;
+    border-right:dashed;
+    padding:30px;
+    margin-bottom:5px;
+    margin-top:5px;
+    margin-left:10px;
+    margin-right:10px;
+    background-color: lightblue;
+    text-align: center;
+}
