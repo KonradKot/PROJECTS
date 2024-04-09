@@ -1,2 +1,2 @@
 # Projects
-This project contains symulation of radio wave propagation.
+Here we are a basic projects
